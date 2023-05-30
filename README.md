@@ -24,7 +24,7 @@ Once the bot is running, you can interact with it using the following commands:
     /list - Lists the series you are currently tracking.
 
 
-[v](https://github.com/1x6/knotifier/assets/44981148/4db2d258-ec03-4354-95a5-dba5dfff363b)
+![v](https://github.com/1x6/knotifier/assets/44981148/4db2d258-ec03-4354-95a5-dba5dfff363b)
 ![Telegram_QgqhfAMcCx](https://github.com/1x6/knotifier/assets/44981148/1ffc4674-c612-4a75-a30c-7f6d2f4e638b)
 
 
