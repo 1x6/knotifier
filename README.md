@@ -6,7 +6,7 @@ knotifier is a Discord bot that tracks titles on bato.to and sends you a notific
 ## Installation
 
  - Clone the repository:
-`git clone https://github.com/your/repo.git`
+`git clone https://github.com/1x6/knotifier.git`
 
  - Install the required dependencies: `pip install -r requirements.txt`
 
