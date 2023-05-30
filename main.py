@@ -18,8 +18,8 @@ def run_thread():
     while True:
         # Call your function
         actions.check_for_new()
-        # Sleep for an hour
-        time.sleep(10)
+        # Sleep for half an hour
+        time.sleep(1800)
 
 # Create and start the thread
 thread = threading.Thread(target=run_thread)
