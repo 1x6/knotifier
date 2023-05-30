@@ -23,7 +23,7 @@ Once the bot is running, you can interact with it using the following commands:
     /telegram <channel_id> - Sets your Telegram channel ID to receive notifications.
     /list - Lists the series you are currently tracking.
 
-![Telegram_QgqhfAMcCx](https://github.com/1x6/knotifier/assets/44981148/00e2a4a6-194d-4400-a0d3-2595ca313b4e)
+![ezgif-3-306d53e844](https://github.com/1x6/knotifier/assets/44981148/582f7de1-a58f-45d5-b3cf-d4a1615bd417)
 ![Telegram_QgqhfAMcCx](https://github.com/1x6/knotifier/assets/44981148/1ffc4674-c612-4a75-a30c-7f6d2f4e638b)
 
 
