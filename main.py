@@ -40,21 +40,27 @@ async def addtrack(ctx, link: str):
     if email is None and telegram_chat_id is None:
         await ctx.send("Please set your email or Telegram channel ID first to receive notifications.")
         return
-    
+
     seriesId = None
-    if '/series/' in link: # v2
+    if '/series/' in link:  # v2
         seriesId = link.split("/series/")[1].split("/")[0]
-    elif '/title/' in link: # v3
+    elif '/title/' in link:  # v3
         seriesId = link.split("/title/")[1].split("/")[0].split("-")[0]
     elif link.isdigit():
         seriesId = int(link)
     if seriesId is None:
         await ctx.send("Invalid series link.")
         return
-    # maybe look for dupe seriesId and dont check
+
+    # Check if the series is already tracked for the user
+    tracked_series = knotifier.db.get_tracked_series(ctx.user.id)
+    if any(series[0] == seriesId for series in tracked_series):
+        await ctx.send("This series is already being tracked.")
+        return
+
     title = bato.get_metadata(seriesId)
     if len(title) > 0 and type(title) == str:
-        print(knotifier.db.track(ctx.user.id, seriesId, bato.get_chapters(seriesId), title))
+        knotifier.db.track(ctx.user.id, seriesId, bato.get_chapters(seriesId), title)
         await ctx.send(f"Now tracking {title}")
     else:
         await ctx.send("Invalid series link")
