@@ -83,7 +83,7 @@ async def list(ctx,):
         msg += "\n"
         await ctx.send(f"Tracking series: {msg}")
 
-@bot.slash_command(name="settelegram", description="Sets your Telegram channel ID")
+@bot.slash_command(name="telegram", description="Sets your Telegram channel ID")
 async def settelegram(ctx, channel_id: str):
     if channel_id.isdigit():
         channel_id = int(channel_id)
