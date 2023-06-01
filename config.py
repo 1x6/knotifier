@@ -27,3 +27,6 @@ def telegram_bot_token():
         return env_bot_token
     else:
         return 'zz'
+    
+def base_url():
+    return 'https://bato.to/series/'
