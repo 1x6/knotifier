@@ -5,6 +5,8 @@ knotifier is a Discord bot that tracks titles on bato.to and sends you a notific
 
 ## Installation
 
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/sK1U4R?referralCode=tJrkZx)
+
  - Clone the repository:
 `git clone https://github.com/1x6/knotifier.git`
 
