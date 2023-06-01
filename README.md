@@ -12,7 +12,8 @@ knotifier is a Discord bot that tracks titles on bato.to and sends you a notific
 
  - Install the required dependencies: `pip install -r requirements.txt`
 
- - Edit the config.py file and set the required variables (token, SMTP details, and Telegram bot token).
+ - Set the enviroment vairables in config.py (token, SMTP details, and Telegram bot token)
+ - Alternatively, you can edit the strings in the config.py file
 
  - Run the bot: `python main.py`
 
